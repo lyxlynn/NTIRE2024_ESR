@@ -28,9 +28,13 @@ def select_model(args, device):
         model = RLFN_Prune()
         model.load_state_dict(torch.load(model_path), strict=True)
 
-    # elif model_id == 1:
-    #     from models.team[Your_Team_ID]_[Model_Name] import [Model_Name]
-    #     ...
+    elif model_id == 17:
+        from models.team17_AdvancedSR import ASR_Prune
+        name, data_range = f"{model_id:02}_AdvancesSR", 255.0
+        model_path = os.path.join('model_zoo', 'team17_AdvancedSR.pth')
+        model = ASR_Prune()
+        model.load_state_dict(torch.load(model_path), strict=True)
+    
     else:
         raise NotImplementedError(f"Model {model_id} is not implemented.")
 
