@@ -65,7 +65,7 @@ After downloaded all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](http
 |--......
 ```
 
-## How to test the baseline model?
+## How to test the  model?
 
 1. `git clone https://github.com/lyxlynn/NTIRE2024_ESR.git`
 2. Select the model you would like to test from [`run.sh`](./run.sh)
@@ -75,9 +75,10 @@ After downloaded all the necessary validate dataset ([DIV2K_LSDIR_valid_LR](http
     - Be sure the change the directories `--data_dir` and `--save_dir`.
 
 
+## About Factsheet
+All fact sheet files are in folder Fact Sheet.
 
-
-
+team17_factsheet.pdf is the compiled pdf file of our fact sheet. team17_factsheet.zip is the corresponding .tex source files.
 ## Organizers
 - Yawei Li (yawei.li@vision.ee.ethz.ch)
 - Bin Ren (bin.ren@unitn.it)
